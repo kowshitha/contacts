@@ -1,0 +1,15 @@
+html
+   head
+   body
+     img(src=`/${info.profile}` width="200px")
+     br
+     label(for="firstname") Name: #{info.firstname}
+     br
+     label(for="phno") MobileNo: #{info.phno}
+     br 
+     label(for="email") Email: #{info.email} 
+     br
+     button 
+       a(href=`/deletecontact/${info._id}`) delete
+     button 
+       a(href=`/updatecontact/${info._id}/${info.firstname}/${info.phno}/${info.email}/${info.profile}`) update contact

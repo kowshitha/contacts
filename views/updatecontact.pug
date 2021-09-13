@@ -1,0 +1,20 @@
+html    
+    body 
+        form(action="/Updatecontact" method="POST")
+            img(src=`/${cprofile}` width="200px")
+            button(formaction=`/upd/${cid}` formmethod='GET') update profile pic
+            br
+            label ID
+            input(type="text" value=`${cid}` name="id")
+            br
+            label Name
+            input(type="text" value=`${cname}` name="firstname")
+            br
+            label Mobile No
+            input(type="number" value=`${cphno}` name="phno")
+            br
+            label Email 
+            input(type="text" value=`${cemail}` name="email") 
+            br
+            button update contact
+            button(formaction='/c' formmethod='GET') Cancel

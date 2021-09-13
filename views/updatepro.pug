@@ -1,0 +1,11 @@
+html
+   head
+   body
+   form(action="/updateprofile" method="POST" enctype="multipart/form-data")
+     label ID
+     input(type="text" value=`${uid}` name="id")
+     label(for="profile") profile pic:
+     input(type="file" name="profile")
+     br
+     button upload
+     button(formaction='/c' formmethod='GET') Cancel

@@ -1,0 +1,14 @@
+html
+   head
+   body
+    form(action="/con" method="GET")
+      table(cellpadding=2,border=2,style={background:"yellow",color:"black"})
+       thead 
+         th contacts
+          button() +
+         th mobile no
+       each val in allcontact
+         tr 
+           td 
+            a(href=`/contactlist/${val._id}`) #{val.firstname} 
+           td #{val.phno}

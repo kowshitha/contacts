@@ -1,0 +1,15 @@
+html
+   head
+   body
+   form
+      table(cellpadding=2,border=2,style={background:"yellow",color:"black"})
+       thead 
+         th friends
+          button(formaction='/friend' formmethod='GET')  +
+         th family
+          button() +
+         th office
+          button() +
+       each val in friends 
+         tr 
+          td #{val.firstname}
